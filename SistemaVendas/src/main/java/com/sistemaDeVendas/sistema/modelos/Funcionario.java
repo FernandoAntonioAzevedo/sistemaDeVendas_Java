@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
+
 @Entity
 public class Funcionario implements Serializable {
 	
@@ -22,8 +23,10 @@ public class Funcionario implements Serializable {
 	private String bairro;
 	private String email;
 	private String funcao;
+	private String numero;
 	
 	@ManyToOne
+	
 	private Cidade cidade;
 
 	public long getId() {
@@ -100,7 +103,16 @@ public class Funcionario implements Serializable {
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
 	}	
+	
 	
 	
 }
