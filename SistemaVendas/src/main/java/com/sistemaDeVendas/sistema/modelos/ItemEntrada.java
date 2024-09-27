@@ -56,7 +56,6 @@ public class ItemEntrada implements Serializable {
 		return serialVersionUID;
 	}
 	
-	
-	
+		
 	
 }

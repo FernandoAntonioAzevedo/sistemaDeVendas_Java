@@ -25,7 +25,6 @@ public class Entrada implements Serializable {
 	private Fornecedor fornecedor;
 	@ManyToOne
 	private Funcionario funcionario;
-	
 	public long getId() {
 		return id;
 	}
@@ -70,9 +69,7 @@ public class Entrada implements Serializable {
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
-	}
-	
-	
+	}	
 	
 	
 }
